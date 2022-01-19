@@ -59,7 +59,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install ninja-build cmake
-          sudo apt-get install boost
+          sudo apt-get install libboost-all-dev
           sudo apt install geographiclib-tools
           sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
           ninja --version
@@ -80,7 +80,7 @@ jobs:
           echo Update ninja =======================================================================
           echo ninja version before
           ninja --version
-          sudo apt-get install boost
+          sudo apt-get install libboost-all-dev
           sudo apt install geographiclib-tools
           sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
           # wget https://github.com/ninja-build/ninja/releases/download/v1.10.0/ninja-linux.zip
