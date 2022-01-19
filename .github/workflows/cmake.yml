@@ -19,7 +19,7 @@ jobs:
       run: |
         sudo apt-get update
         
-        wget https://sourceforge.net/projects/geographiclib/files/latest/download
+        https://downloads.sourceforge.net/project/geographiclib/distrib/GeographicLib-1.52.tar.gz?ts=gAAAAABh6I---TO3Eh2BU6XvrMotvm1_GAPd332ui0BhMmn69hcaWNaNRZGpezL-U155Bhi4ve-A59yNPpHRJWhQlwMUwNNUEQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fgeographiclib%2Ffiles%2Flatest%2Fdownload
         tar xfpz GeographicLib-1.52.tar.gz
         mkdir BUILD
         cd BUILD 
