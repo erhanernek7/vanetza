@@ -19,8 +19,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install libboost-all-dev
-        wget https://sourceforge.net/projects/geographiclib/files/distrib/GeographicLib-1.52.tar.gz/download
-        tar xfpz GeographicLib-1.52.tar.gz 
+        wget https://downloads.sourceforge.net/project/geographiclib/distrib/GeographicLib-1.52.tar.gz?ts=gAAAAABh6IyjmeAmR6wQKghid3f5kceBulOPoc1dloyDZxhV2p7CGJZnGs_zizpFF5QjhoBhAN_5LjyRenD9RFDOnhA32P6yaQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fgeographiclib%2Ffiles%2Flatest%2Fdownload
         cd GeographicLib-1.52 
         mkdir BUILD
         cd BUILD 
