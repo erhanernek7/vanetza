@@ -26,7 +26,7 @@ jobs:
         #../configure 
         #make
         #make install
-        sudo ln -s /usr/share/cmake/geographiclib/FindGeographicLib.cmake /usr/share/cmake-3.10/Modules/
+        sudo ln -s /usr/share/cmake/geographiclib/FindGeographicLib.cmake /usr/share/cmake-3.1*/Modules/
         sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
         sudo apt-get install libboost-all-dev
         
