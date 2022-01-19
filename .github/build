@@ -1,2 +1,2 @@
-mkdir build ¾¾cd build;
+cd build;
 make -j32
