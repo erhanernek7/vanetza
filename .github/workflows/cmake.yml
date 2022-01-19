@@ -19,7 +19,14 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install libboost-all-dev
-        sudo apt-get install geographiclib-tools
+        wget https://sourceforge.net/projects/geographiclib/files/distrib/GeographicLib-1.52.tar.gz/download
+        tar xfpz GeographicLib-1.52.tar.gz 
+        cd GeographicLib-1.52 
+        mkdir BUILD
+        cd BUILD 
+        ../configure 
+        make
+        make instal
         sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
         
     - name: Configure CMake
