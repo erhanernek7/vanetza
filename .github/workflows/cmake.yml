@@ -19,7 +19,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install libboost-all-dev
-        sudo apt install geographiclib-tools
+        sudo apt-get install geographiclib-tools
         sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
         
     - name: Configure CMake
