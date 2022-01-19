@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies on Ubuntu
-      run: 
+      run: |
         sudo apt-get update
         sudo apt-get install boost
         sudo apt install geographiclib-tools
