@@ -3,7 +3,7 @@
 Vanetza is an open-source implementation of the ETSI C-ITS protocol suite.
 This comprises the following protocols and features among others:
 
-* GeoNetworking (GN)
+* GeoNetworking (GN)   
 * Basic Transport Protocol (BTP)
 * Decentralized Congestion Control (DCC)
 * Security
