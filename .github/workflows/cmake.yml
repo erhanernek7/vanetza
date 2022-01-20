@@ -37,9 +37,7 @@ jobs:
       
       run: |
         cmake --version
-        
-        #sudo cp /usr/share/cmake/geographiclib/FindGeographicLib.cmake /usr/share/cmake-3.22/Modules/
-        #sudo cp /usr/share/cmake/geographiclib/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/
+        echo ${{github.workspace}}
         cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
@@ -47,8 +45,8 @@ jobs:
       
       run: |
         echo ${{github.workspace}}
-        mkdir /home/runner/work/vanetza/vanetza/build && cd /home/runner/work/vanetza/vanetza/build
-        cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+        #mkdir /home/runner/work/vanetza/vanetza/build && cd /home/runner/work/vanetza/vanetza/build
+        cmake -j32 --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
     - name: Test
       working-directory: ${{github.workspace}}/build
