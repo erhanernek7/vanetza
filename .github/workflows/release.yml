@@ -1,6 +1,6 @@
 on:
-  release:
-    types: [created]
+  push:
+    branches: main
 name: Handle Release
 jobs:
   generate:
@@ -15,5 +15,7 @@ jobs:
         uses: skx/github-action-publish-binaries@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: 'example-*'
+        with:           
+          asset_path: ./bin/soctap
+          asset_name: soctap
+          asset_content_type: application  
