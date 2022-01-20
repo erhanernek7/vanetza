@@ -26,7 +26,8 @@ jobs:
         #../configure 
         #make
         #make install
-        
+        sudo apt-get install libgeographic-dev
+        #sudo apt-get install libgeographic-tools
         sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils
         sudo apt-get install libboost-all-dev
         
@@ -36,8 +37,9 @@ jobs:
       
       run: |
         cmake --version
-        sudo cp /usr/share/cmake/geographiclib/FindGeographicLib.cmake /usr/share/cmake-3.22/Modules/
-        sudo cp /usr/share/cmake/geographiclib/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/
+        
+        #sudo cp /usr/share/cmake/geographiclib/FindGeographicLib.cmake /usr/share/cmake-3.22/Modules/
+        #sudo cp /usr/share/cmake/geographiclib/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/
         cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
